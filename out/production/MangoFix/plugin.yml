@@ -1,0 +1,9 @@
+main: me.idarkyy.mango.fix.MangoFix
+name: MangoFix
+author: iDarkyy
+description: Fix for Mango Factions Plugin
+#softdepend: []
+depend: [Mango]
+version: 1.0
+commands:
+  mango:

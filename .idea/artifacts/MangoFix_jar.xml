@@ -1,0 +1,9 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="MangoFix:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/MangoFix_jar</output-path>
+    <root id="archive" name="MangoFix.jar">
+      <element id="module-output" name="MangoFix" />
+      <element id="extracted-dir" path="$APPLICATION_HOME_DIR$/redist/annotations-java8.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>
