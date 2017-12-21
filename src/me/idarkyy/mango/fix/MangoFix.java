@@ -3,6 +3,7 @@ package me.idarkyy.mango.fix;
 import me.idarkyy.mango.fix.api.ConfigAPI;
 import me.idarkyy.mango.fix.api.FactionsAPI;
 import me.idarkyy.mango.fix.commands.MangoCommand;
+import me.idarkyy.mango.fix.listeners.BucketEmptyEvent;
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
 import org.bukkit.plugin.java.JavaPlugin;
@@ -36,6 +37,7 @@ public class MangoFix extends JavaPlugin {
         log(lines);
         loadCommands();
         ConfigAPI.getAPI().loadConfiguration();
+        registerEvents();
 
         new BukkitRunnable() {
             @Override
@@ -61,5 +63,8 @@ public class MangoFix extends JavaPlugin {
     }
     protected void loadConfig() {
 
+    }
+    private void registerEvents() {
+        Bukkit.getPluginManager().registerEvents(new BucketEmptyEvent(), this);
     }
 }
