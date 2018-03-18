@@ -1,0 +1,6 @@
+name: MangoFix
+author: ExpDev
+main: me.expdev.mangofix.MangoFix
+description: Fix for Mango Factions Plugin
+depend: [Mango]
+version: 1.0-SNAPSHOT
